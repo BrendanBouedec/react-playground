@@ -2,12 +2,23 @@
 
 const firstName = 'r0ulito';
 const lastName = 'formateur';
-
-
+function Firstname(props) {
+    return <span className="firstname">{firstName}</span>
+}
+function Lastname(props) {
+    return <span className="lastname red-text">{lastName}</span>
+}
 // Solution sans bonus
-const helloWorld = <h1>Hello <span>{firstName[0].toUpperCase() + firstName.slice(1)}</span> <span className="red-text">{lastName.toUpperCase()}</span></h1>;
+// const helloWorld = <h1>Hello <span>{firstName[0].toUpperCase() + firstName.slice(1)}</span> <span className="red-text">{lastName.toUpperCase()}</span></h1>;
 
+// function HelloWorld() {
+//     const name = {
+//         firstName: "brendan",
+//         lastName: "bouedec"
+//     }
 
+//     return <h1><span className="firstname">{name.firstName}</span> <span className="lastname red-text">{name.lastName}</span></h1>;
+// }
 
 /**
  * 
@@ -28,5 +39,4 @@ const helloWorld = <h1>Hello <span>{firstName[0].toUpperCase() + firstName.slice
  );
 
  */
-
-ReactDOM.render(helloWorld, document.querySelector('#app'));
+ReactDOM.render(<React.Fragment><Firstname /> <Lastname /></React.Fragment>, document.querySelector('#app'));

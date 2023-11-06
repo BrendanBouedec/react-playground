@@ -1,3 +1,11 @@
 .red-text {
     color: red;
 }
+
+.lastname {
+    text-transform: uppercase;
+}
+
+.firstname {
+    text-transform: capitalize;
+}
