@@ -73,4 +73,4 @@ function UserCard({ user }) {
   )
 }
 
-ReactDOM.render(<App />, document.querySelector('#
+ReactDOM.render(<App/>, document.querySelector('#app'))
